@@ -1,6 +1,8 @@
 # 🎬 YouTube Intro Generator  
 
 This project is a simple one-page application designed to generate catchy YouTube intros from video scripts. It leverages large language models (LLMs) for creating engaging, attention-grabbing introductions.  
+In the application I have auto populated the api key(free-tier) for ease of use for users to test.
+you can use use yours if you want to use your's please replace it.
 
 ## Features  
 - Paste your video script into a text box to generate a punchy intro.  

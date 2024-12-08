@@ -59,11 +59,11 @@ def main():
     selected_model = st.selectbox(
         "Choose an AI Model", 
         LLM_PROVIDERS,
-        index=None,
+        index=0,
         placeholder="Select the AI model you want to use for generating the intro"
     )
 
-    api_key = st.text_input("API Key", key="chatbot_api_key", value=st.secrets.get(llm_provider_api[selected_model]),type="password", placeholder="Enter API key")
+    api_key = st.text_input("API Key", key="chatbot_api_key", value=st.secrets.get(llm_provider_api.get(selected_model), ""),type="password", placeholder="Enter API key")
 
     script = st.text_area(
         "Video Script", 
