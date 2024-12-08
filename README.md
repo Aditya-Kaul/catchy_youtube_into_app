@@ -4,6 +4,9 @@ This project is a simple one-page application designed to generate catchy YouTub
 In the application I have auto populated the api key(free-tier) for ease of use for users to test.
 you can use use yours if you want to use your's please replace it.
 
+## Link to the deployed Application:
+https://catchy-youtube-intro-app-adi.streamlit.app/
+
 ## Features  
 - Paste your video script into a text box to generate a punchy intro.  
 - Select from multiple LLM providers (e.g., Mistral, Cohere).  
@@ -24,3 +27,8 @@ you can use use yours if you want to use your's please replace it.
    ```bash  
    git clone https://github.com/Aditya-Kaul/catchy_youtube_into_app.git  
    cd catchy_youtube_into_app  
+
+   Run Locally:
+   streamlit run app.py
+
+   To run locally, set secret keys/ api keys in .streamlit/secrets.toml
