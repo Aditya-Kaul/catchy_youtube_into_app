@@ -1,0 +1,27 @@
+Question 2:
+You are developing an automated Youtube Script generator that integrates a fine-tuned LLM API, and it will be:
+· Used by our internal team of 10 or so content creators to expedite their script and Youtube thumbnail / asset generation
+· Subsequently (6m+) offered as a SaaS application
+Come up with a brief plan for building this, including the tech stack and approach to scalability.
+
+
+Answer.
+
+The automated youtube script generator is an innovative saas solution designed to streamline content creation of youtube for
+internal teams and eventual expansion.
+Here is complete architectural approach to build a robust system for script generation.
+
+Key Approach:
+The system will be built on a robust microservice architecture that will prioritise scalability, flexibility & intelligent AI
+integration.  This multi-layered approach will provide a seamless experience from script generation to asset creation.
+
+Tech stack:
+FrontEnd: 
+React for responsive and dynamic user Interface.
+Backend: Python based FastAPI microservice for robust and scalable server-side logic
+Database: Mongodb for flexibile document management.
+
+AI and ML Components:
+Using fine-tuned models from OpenAI or Anthropic,
+Another aspect is we can utilise the Intelligent model selection method based on parameters like performance, cost effeciency etc.
+Implemementing continious learning for model by using feedback loops for ongoing model improvement.

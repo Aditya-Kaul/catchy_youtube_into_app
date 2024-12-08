@@ -1,0 +1,55 @@
+Question 1:
+Explain how your architecture would change if this were a longer-term project rather than a short take-home assessment?
+
+Answer:
+To evolve this project to a long term project there are several factors to be considered. In the current approach
+I have used LiteLLm an open-source library that allows us to switch out LLMs without much efforts. It also eases the process of multiple LLM integration 
+with a same instantiation.
+However to enhance this existing assessment level project. 
+There are key factors that are to be considered. Lets discuss them in brief.
+
+1. Introducing Backend architecture and scalability: 
+The current system has is a monolithic streamlit application. For a long term project , transitioning to "micro-services approach" would be recommended.
+using seprate services for:
+(a) Authentication
+(b) Intro Generation
+(c) User Management
+
+Allowing independent scaling of different components, enabling easier deployment and maintenance. Also provides a flexibility to use different technologies for different services.
+
+2. Authentication and Security Key Enhancements
+ALthough we are currently on a very basic version , yet we have a wide spectrum of expansion while developing a full-fledged backend.
+One of them is 
+(a) Implememnnting a robust auth system which everything from user login/signup, role based access(if required) & JWt based authentication.
+(b) Securing API key Management: Moving away from existing direct API key input to implementing a secure system like using environment based config management.
+(c) adding a rate limiting and usage tracking.
+
+3. Next Important part of this architecture would be DATABASE INTEGRATION.
+(a) Using database preferably persistent db to manage and store  
+user generated scripts, 
+saving generated intros,
+tracking usage 
+
+4. Now 4th and the very important part is "Model Selection and Management":
+The existing approach, 
+Model Selection --> static and user driven with pre-defined list of models and manual API key input.
+
+in Enhanced architecture --> Intelligent and dynamic system --> Dynamically Selects optimal LLM based on multiple intelligent criteria
+                                                                        |
+                                                                        |
+                                                                        |---------> like calculating model suitability score, performance score, 
+                                                                                         average response time, cost effeciency, token limits etc.
+
+This enhanced architecture now will proactively tracks model performance, implements automatic fallback mechanisms, and 
+provides real-time insights into model selection. 
+Whereas original one,
+relied on manual selection and lacked adaptability.
+
+
+5. Last would be Front-End Improvements.
+(a) moving from streamlit to React for more robust framework and to have more control over the design.
+(b) Responsiveness design.
+
+6. Some advance feature 
+(a) Integrating with youtube platform using youtube API,
+Multiple language support                                                                        
